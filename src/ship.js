@@ -1,5 +1,5 @@
 class Ship {
-  constructor({name, type, maxCrew, odometer = 0, fuelCapacity = 10, captain, parts = {}, readyToFly, notes}) {
+  constructor({name, type, maxCrew, odometer = 0, fuelCapacity = 10, captain, parts = {}}) {
       this.name = name;
       this.validTypes = ["military", "cargo", "passenger"];
       this.type = this.validTypes.includes(type) ? type : undefined;
